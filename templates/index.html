@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<div class="header" style="float: left; width: 100%;">
+			{% if g.user %}
+				{{ g.user }} <a href="/logout">Logout</a>
+			{% else %}
+				<a href="/signup">Sign up</a> <a href="/login">Login</a>
+			{% endif %}
+		</div>
+	</body>
+</html>
